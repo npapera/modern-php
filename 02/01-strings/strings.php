@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <h2>Lesson 1 on Strings</h2>
     <pre>line1
         line2
     </pre>
@@ -26,5 +27,23 @@
         $text = "I'm " . $name . " and I want to learn the language " . $subject;
         echo $text . "!";
     ?></pre>
+
+    <h2>Lesson 2 on Strings</h2>
+    <pre><?php
+        $greeting = "I\"m learning PHP!";
+        echo "{$greeting}_!";
+        echo "<br />";
+        echo "I'am $name... and I'm learning \"{$subject}\".";
+        echo "\n";
+        echo 'I"am {$name} and I"m learning {$subject}.';
+        echo "\n";
+        echo "\t-";
+        $abc = "ECHOOOOO!";
+    ?></pre>
+
+    <p>A first line of text. <?php echo '<br/>'?>A second line of text</p>
+    <p>A first line of text. <?php echo "\n"?>A second line of text</p>
+    <p><?php echo 'My last echo, $abc'?></p>
+    <p><?php echo "My last echo, {$abc}"?></p>
 </body>
 </html>
