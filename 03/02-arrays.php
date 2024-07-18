@@ -6,7 +6,8 @@
     <link rel="stylesheet" type="text/css" href="../styles/simple.css">
     <title>Document</title>
 </head>
-<body>
+<>
+    <h3>Arrays in PHP</h3>
     <pre><?php
     /*$category1 = 'Programming';
     $category2 = 'Business';
@@ -22,6 +23,27 @@
 
     //$firstCategory = $categories[0];
     //var_dump($firstCategory);
+    ?></pre>
+
+    <h4>PHP functions and arrays</h4>
+    <pre><?php 
+        $categories = ['Programming', 'Business', 'Art & Drawing', 'Self Improvement', 'History'];
+        echo "\$categories = ";
+        var_dump($categories);
+        
+        echo "in_array('Programming', \$categories) --> ";
+        var_dump(in_array('Programming', $categories));
+
+        //var_dump($categories[99]); --> Warning(NULL, value doesn't exist)
+        echo "isset(\$categories[99]) --> ";
+        var_dump(isset($categories[99]));
+        echo "empty(\$categories[99]) --> ";
+        var_dump(empty($categories[99]));
+
+        if (in_array("Programming", $categories)) {
+            echo "Programming is a category on our system.\n";
+        }
+
     ?></pre>
 </body>
 </html>
